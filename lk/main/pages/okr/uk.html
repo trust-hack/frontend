@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ТРАСТ</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../../../assets/css/demo/style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="../../../assets/images/favicon.png" />
+</head>
+<body>
+<script src="../assets/js/preloader.js"></script>
+  <div class="body-wrapper">
+    <!-- partial:../../partials/_sidebar.html -->
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+      <div class="mdc-drawer__header">
+        <a href="index.html" class="brand-logo">
+          <img src="../../../assets/images/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="mdc-drawer__content">
+        <div class="user-info">
+          <p class="name">Поиск аномальных заявок</p>
+          <p class="email">trust@trust.ru</p>
+        </div>
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="../../lk.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
+                Личный кабинет
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                УК 
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="ui-sub-menu">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                ОКРУГА
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="ui-sub-menu">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="tsao.html">
+                      ЦАО
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="cao.html">
+                      САО
+                    </a>
+                  </div>
+				                    <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="cwao.html">
+                      СВАО
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="vao.html">
+                      ВАО
+                    </a>
+                  </div>
+				                    <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="uwao.html">
+                      ЮВАО
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="uao.html">
+                      ЮАО
+                    </a>
+                  </div>
+				                    <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="uzao.html">
+                      ЮЗАО
+                    </a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="dzao.html">
+                      ЗАО
+                    </a>
+                  </div>
+				                    <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="czao.html">
+                      СЗАО
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>Инструкции</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </aside>
+    <!-- partial -->
+    <div class="main-wrapper mdc-drawer-app-content">
+      <!-- partial:partials/_navbar.html -->
+      <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button sidebar-toggler">menu</button>
+            <span class="mdc-top-app-bar__title">Добро пожаловать!</span>
+          </div>
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-top-app-bar__section-right">
+            <div class="menu-button-container menu-profile d-none d-md-block">
+              <button class="mdc-button mdc-menu-button">
+                <span class="d-flex align-items-center">
+                  <span class="user-name">Елена Сергеева</span>
+                </span>
+              </button>
+              <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">Редактировать профиль</h6>
+                    </div>
+                  </li>
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+						<a href="../../../../index.html">
+							<h6 class="item-subject font-weight-normal">
+								Выйти
+							</h6>
+						</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- partial -->
+      <div class="page-wrapper mdc-toolbar-fixed-adjust">
+        <main class="content-wrapper">
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
+                <div class="mdc-card info-card info-card--success">
+                  <div class="card-inner">
+                    <h5 class="card-title">Благоустройство ЮК</h5>
+                    <h5 class="font-weight-light pb-2 mb-1 border-bottom" id="improvement">62,0076.00</h5>
+                    <p class="tx-12 text-muted anomal" >48% аномальных заявок</p>
+                    <div class="card-icon-wrapper">
+                        <img src="../../../assets/images/1.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
+                <div class="mdc-card info-card info-card--danger">
+                  <div class="card-inner">
+                    <h5 class="card-title">Отопление ЮК</h5>
+                    <h5 class="font-weight-light pb-2 mb-1 border-bottom" id="heat">1,958,104.00</h5>
+                    <p class="tx-12 text-muted anomal" >55% аномальных заявок</p>
+                    <div class="card-icon-wrapper">
+                        <img src="../../../assets/images/2.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
+                <div class="mdc-card info-card info-card--primary">
+                  <div class="card-inner">
+                    <h5 class="card-title">Электричество ЮК</h5>
+                    <h5 class="font-weight-light pb-2 mb-1 border-bottom" id="electrical">234,769.00</h5>
+                    <p class="tx-12 text-muted anomal" >87% аномальных заявок</p>
+                    <div class="card-icon-wrapper">
+                        <img src="../../../assets/images/3.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
+                <div class="mdc-card info-card info-card--info">
+                  <div class="card-inner">
+                    <h5 class="card-title">Водоснабжение ЮК</h5>
+                    <h5 class="font-weight-light pb-2 mb-1 border-bottom" id="water">1,200.00</h5>
+                    <p class="tx-12 text-muted anomal" >87% аномальных заявок</p>
+                    <div class="card-icon-wrapper">
+                        <img src="../../../assets/images/4.png">                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                <div class="mdc-card p-0">
+                  <h6 class="card-title card-padding pb-0">Управляющие компании</h6>
+                  <div class="table-responsive">
+                    <table class="table table-hoverable">
+                      <thead>
+                        <tr>
+                          <th class="text-left">Наименование</th>
+                          <th>Заявки</th>
+                          <th>Аномальные</th>
+                          <th>%</th>
+                          <th>Водоснабжение</th>
+                          <th>Отопление</th>
+                          <th>Электрика</th>
+                          <th>Благоустройство</th>
+                          <th>Прочие</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ДОРОГОМИЛОВО»</td>
+                          <td>1.59</td>
+                          <td>6.0</td>
+                          <td>50</td>
+                          <td>4.0</td>
+                          <td>87</td>
+                          <td>20%</td>
+                          <td>4%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК ЗЕЛАО»</td>
+                          <td>1.59</td>
+                          <td>2.5</td>
+                          <td>35</td>
+                          <td>2.0</td>
+                          <td>97</td>
+                          <td>17%</td>
+                          <td>2%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА СЕВЕРНОЕ МЕДВЕДКОВО»</td>
+                          <td>1.4</td>
+                          <td>4.0</td>
+                          <td>40</td>
+                          <td>8.0</td>
+                          <td>83</td>
+                          <td>14%</td>
+                          <td>7%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК ПРЕСНЕНСКОГО РАЙОНА»</td>
+                          <td>1.7</td>
+                          <td>3.0</td>
+                          <td>34</td>
+                          <td>6.0</td>
+                          <td>67</td>
+                          <td>17%</td>
+                          <td>3%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ФИЛЕВСКИЙ ПАРК»</td>
+                          <td>2.49</td>
+                          <td>4.0</td>
+                          <td>45</td>
+                          <td>3.05</td>
+                          <td>83</td>
+                          <td>20%</td>
+                          <td>9%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ЮЖНОПОРТОВЫЙ»</td>
+                          <td>0.78</td>
+                          <td>5.2</td>
+                          <td>35</td>
+                          <td>2.0</td>
+                          <td>27</td>
+                          <td>18%</td>
+                          <td>37%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ЛЮБЛИНО»</td>
+                          <td>1.59</td>
+                          <td>6.0</td>
+                          <td>50</td>
+                          <td>4.0</td>
+                          <td>87</td>
+                          <td>20%</td>
+                          <td>4%</td>
+                          <td>5.7%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ЩУКИНО»</td>
+                          <td>1.59</td>
+                          <td>6.0</td>
+                          <td>50</td>
+                          <td>4.0</td>
+                          <td>87</td>
+                          <td>20%</td>
+                          <td>4%</td>
+                          <td>6.5%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ЛОМОНОСОВСКИЙ»</td>
+                          <td>0.45</td>
+                          <td>5.0</td>
+                          <td>45</td>
+                          <td>3.5</td>
+                          <td>45</td>
+                          <td>19%</td>
+                          <td>26%</td>
+                          <td>9%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА КОПТЕВО»</td>
+                          <td>0.67</td>
+                          <td>5.0</td>
+                          <td>56</td>
+                          <td>3.34</td>
+                          <td>67</td>
+                          <td>23%</td>
+                          <td>4%</td>
+                          <td>1.8%</td>
+                        </tr>
+						
+						
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ЗЮЗИНО»</td>
+                          <td>1.59</td>
+                          <td>6.0</td>
+                          <td>50</td>
+                          <td>4.0</td>
+                          <td>87</td>
+                          <td>20%</td>
+                          <td>4%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА КРЫЛАТСКОЕ»</td>
+                          <td>1.59</td>
+                          <td>2.5</td>
+                          <td>35</td>
+                          <td>2.0</td>
+                          <td>97</td>
+                          <td>17%</td>
+                          <td>2%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК ВЫХИНО РАЙОНА «ВЫХИНО-ЖУЛЕБИНО»</td>
+                          <td>1.4</td>
+                          <td>4.0</td>
+                          <td>40</td>
+                          <td>8.0</td>
+                          <td>83</td>
+                          <td>14%</td>
+                          <td>7%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ОРЕХОВО-БОРИСОВО СЕВЕРНОЕ»</td>
+                          <td>1.7</td>
+                          <td>3.0</td>
+                          <td>34</td>
+                          <td>6.0</td>
+                          <td>67</td>
+                          <td>17%</td>
+                          <td>3%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК ХОРОШЕВСКОГО РАЙОНА»</td>
+                          <td>2.49</td>
+                          <td>4.0</td>
+                          <td>45</td>
+                          <td>3.05</td>
+                          <td>83</td>
+                          <td>20%</td>
+                          <td>9%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК ТАГАНСКОГО РАЙОНА»</td>
+                          <td>0.78</td>
+                          <td>5.2</td>
+                          <td>35</td>
+                          <td>2.0</td>
+                          <td>27</td>
+                          <td>18%</td>
+                          <td>37%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК БУТЫРСКОГО РАЙОНА»</td>
+                          <td>1.59</td>
+                          <td>6.0</td>
+                          <td>50</td>
+                          <td>4.0</td>
+                          <td>87</td>
+                          <td>20%</td>
+                          <td>4%</td>
+                          <td>5.7%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ООО «УК ЮНИ-ДОМ»</td>
+                          <td>1.59</td>
+                          <td>6.0</td>
+                          <td>50</td>
+                          <td>4.0</td>
+                          <td>87</td>
+                          <td>20%</td>
+                          <td>4%</td>
+                          <td>6.5%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА СОКОЛИНАЯ ГОРА»</td>
+                          <td>0.45</td>
+                          <td>5.0</td>
+                          <td>45</td>
+                          <td>3.5</td>
+                          <td>45</td>
+                          <td>19%</td>
+                          <td>26%</td>
+                          <td>9%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГГБУ «ЖИЛИЩНИК РЯЗАНСКОГО РАЙОНА»</td>
+                          <td>0.67</td>
+                          <td>5.0</td>
+                          <td>56</td>
+                          <td>3.34</td>
+                          <td>67</td>
+                          <td>23%</td>
+                          <td>4%</td>
+                          <td>1.8%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ГОЛЬЯНОВО»</td>
+                          <td>1.7</td>
+                          <td>3.0</td>
+                          <td>34</td>
+                          <td>6.0</td>
+                          <td>67</td>
+                          <td>17%</td>
+                          <td>3%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ЖСК «ВОЛОГДА»</td>
+                          <td>2.49</td>
+                          <td>4.0</td>
+                          <td>45</td>
+                          <td>3.05</td>
+                          <td>83</td>
+                          <td>20%</td>
+                          <td>9%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ЖСК «ВЫСОТНЫЙ»</td>
+                          <td>0.78</td>
+                          <td>5.2</td>
+                          <td>35</td>
+                          <td>2.0</td>
+                          <td>27</td>
+                          <td>18%</td>
+                          <td>37%</td>
+                          <td>6%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА ЧЕРТАНОВО СЕВЕРНОЕ»</td>
+                          <td>1.59</td>
+                          <td>6.0</td>
+                          <td>50</td>
+                          <td>4.0</td>
+                          <td>87</td>
+                          <td>20%</td>
+                          <td>4%</td>
+                          <td>5.7%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК САВЕЛОВСКОГО РАЙОНА»</td>
+                          <td>1.59</td>
+                          <td>6.0</td>
+                          <td>50</td>
+                          <td>4.0</td>
+                          <td>87</td>
+                          <td>20%</td>
+                          <td>4%</td>
+                          <td>6.5%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ «ЖИЛИЩНИК РАЙОНА СОКОЛИНАЯ ГОРА»</td>
+                          <td>0.45</td>
+                          <td>5.0</td>
+                          <td>45</td>
+                          <td>3.5</td>
+                          <td>45</td>
+                          <td>19%</td>
+                          <td>26%</td>
+                          <td>9%</td>
+                        </tr>
+                        <tr>
+                          <td class="text-left">ГБУ«ЖИЛИЩНИК РАЙОНА КОНЬКОВО»</td>
+                          <td>0.67</td>
+                          <td>5.0</td>
+                          <td>56</td>
+                          <td>3.34</td>
+                          <td>67</td>
+                          <td>23%</td>
+                          <td>4%</td>
+                          <td>1.8%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- partial:../../partials/_footer.html -->
+        <footer>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+                <span class="text-center text-sm-left d-block d-sm-inline-block tx-14">Copyright © TRUST</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+    </div>
+  </div>
+  <!-- plugins:js -->
+  <script src="../../../assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../../assets/js/material.js"></script>
+  <script src="../../../assets/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../../assets/api/page.js"></script>
+  <script>changeData('ВАО')</script>
+  <!-- End custom js for this page-->
+</body>
+</html>

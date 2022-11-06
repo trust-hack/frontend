@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TRUST</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="../assets/vendors/jvectormap/jquery-jvectormap.css">
+  <!-- End plugin css for this page -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../assets/css/demo/style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+<body>
+<script src="../assets/js/preloader.js"></script>
+  <div class="body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+    <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+      <div class="mdc-drawer__header">
+        <a href="index.html" class="brand-logo">
+          <img src="../assets/images/logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="mdc-drawer__content">
+        <div class="user-info">
+          <p class="name">Поиск аномальных заявок</p>
+          <p class="email">trust@trust.ru</p>
+        </div>
+        <div class="mdc-list-group">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
+                Личный кабинет
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="pages/okr/uk.html">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                УК 
+              </a>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="ui-sub-menu">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                ОКРУГА
+                <i class="mdc-drawer-arrow material-icons">chevron_right</i>
+              </a>
+              <div class="mdc-expansion-panel" id="ui-sub-menu">
+                <nav class="mdc-list mdc-drawer-submenu">
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/okr/tsao.html">ЦАО</a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/okr/cao.html">САО</a>
+                  </div>
+				  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/okr/cwao.html">СВАО</a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/okr/vao.html">ВАО</a>
+                  </div>
+				  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/okr/uwao.html">ЮВАО</a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/okr/uao.html">ЮАО</a>
+                  </div>
+				  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/okr/uzao.html">ЮЗАО</a>
+                  </div>
+                  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/okr/dzao.html">ЗАО</a>
+                  </div>
+				  <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="pages/okr/czao.html">СЗАО</a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="mdc-list-item mdc-drawer-item">
+              <a class="mdc-drawer-link" href="#">
+                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>Инструкции</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </aside>
+    <!-- partial -->
+    <div class="main-wrapper mdc-drawer-app-content">
+      <!-- partial:partials/_navbar.html -->
+      <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button sidebar-toggler">menu</button>
+            <span class="mdc-top-app-bar__title">Добро пожаловать!</span>
+          </div>
+          <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end mdc-top-app-bar__section-right">
+            <div class="menu-button-container menu-profile d-none d-md-block">
+              <button class="mdc-button mdc-menu-button">
+                <span class="d-flex align-items-center">
+                  <span class="user-name">Елена Сергеева</span>
+                </span>
+              </button>
+              <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+                      <h6 class="item-subject font-weight-normal">Редактировать профиль</h6>
+                    </div>
+                  </li>
+                  <li class="mdc-list-item" role="menuitem">
+                    <div class="item-content d-flex align-items-start flex-column justify-content-center">
+						<a href="../../index.html">
+							<span class="item-subject font-weight-normal">
+								Выйти
+							</span>
+						</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- partial -->
+      <div class="page-wrapper mdc-toolbar-fixed-adjust">
+        <main class="content-wrapper">
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
+                <div class="mdc-card info-card info-card--success">
+                  <div class="card-inner">
+                    <h5 class="card-title" >Благоустройство</h5>
+                    <h5 class="font-weight-light pb-2 mb-1 border-bottom" id = 'improvementNum'></h5>
+<!--                     <p class="tx-12 text-muted"><span id = 'improvementPers'></span>% аномальных заявок</p> -->
+                    <div class="card-icon-wrapper">
+                        <img src="../assets/images/1.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
+                <div class="mdc-card info-card info-card--danger">
+                  <div class="card-inner">
+                    <h5 class="card-title">Отопление</h5>
+                    <h5 class="font-weight-light pb-2 mb-1 border-bottom"  id = 'heatNum'>0</h5>
+<!--                     <p class="tx-12 text-muted" ><span id = 'heatPers'></span>% аномальных заявок</p> -->
+                    <div class="card-icon-wrapper">
+                        <img src="../assets/images/2.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
+                <div class="mdc-card info-card info-card--primary">
+                  <div class="card-inner">
+                    <h5 class="card-title">Электричество</h5>
+                    <h5 class="font-weight-light pb-2 mb-1 border-bottom" id = 'electrNum'>0</h5>
+<!--                     <p class="tx-12 text-muted" ><span id = 'electrPers'></span>% аномальных заявок</p> -->
+                    <div class="card-icon-wrapper">
+                        <img src="../assets/images/3.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-tablet">
+                <div class="mdc-card info-card info-card--info">
+                  <div class="card-inner">
+                    <h5 class="card-title">Водоснабжение</h5>
+                    <h5 class="font-weight-light pb-2 mb-1 border-bottom" id = 'waterNum'>0</h5>
+<!--                     <p class="tx-12 text-muted" > <span id = 'waterPers'></span>% аномальных заявок</p> -->
+                    <div class="card-icon-wrapper">
+                        <img src="../assets/images/4.png">                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                <div class="mdc-card">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="card-title mb-0">Округа Москвы</h4>
+                  </div>
+                  <div class="d-block d-sm-flex justify-content-between align-items-center">
+                      <h5 class="card-sub-title mb-2 mb-sm-0">Количество аномальных заявок по округам</h5>
+                      <div class="menu-button-container">
+                        <button class="mdc-button mdc-menu-button mdc-button--raised button-box-shadow tx-12 text-dark bg-white font-weight-light">
+                            от 01.11.2022
+                          <i class="material-icons">arrow_drop_down</i>
+                        </button>
+                        <div class="mdc-menu mdc-menu-surface" tabindex="-1">
+                          <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+                            <li class="mdc-list-item" role="menuitem">
+                              <h6 class="item-subject font-weight-normal">Обновить</h6>
+                            </li>
+                            <li class="mdc-list-divider"></li>
+                            <li class="mdc-list-item" role="menuitem">
+                              <h6 class="item-subject font-weight-normal">Выгрузить</h6>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="mdc-layout-grid__inner mt-2">
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet">
+                        <div class="table-responsive">
+                          <table class="table dashboard-table">
+                            <tbody>
+                              <tr>
+                                <td>
+									<a href="pages/okr/tsao.html"> 
+										<span class="mdc-button-main">
+											ЦАО (Центральный административный округ)
+										</span>
+									</a> 
+								</td>
+                                <td class="text-right">1,671.10</td>
+                                <td class="font-weight-medium text-right"> 39% </td>
+                              </tr>
+                              <tr>
+                                <td>
+									<a href="pages/okr/cao.html">
+										<span class="mdc-button-main"> 
+											САО (Северный административный округ)
+										</span>
+									</a> 
+								</td>
+                                <td class="text-right">1,064.75</td>
+                                <td class=" font-weight-medium text-right"> 30% </td>
+                              </tr>
+                              <tr>
+                                <td>
+									<a href="pages/okr/cwao.html">
+										<span class="mdc-button-main"> 
+											СВАО (Северо-Восточный административный округ)
+										</span>
+									</a> 
+								</td>
+                                <td class="text-right">1,055.98</td>
+                                <td class=" font-weight-medium text-right"> 45% </td>
+                              </tr>
+                              <tr>
+                                <td>
+									<a href="pages/okr/vao.html">
+										<span class="mdc-button-main"> 
+										ВАО (Восточный административный округ)
+										</span>
+									</a> 
+								</td>
+                                <td class="text-right">1,045.49</td>
+                                <td class=" font-weight-medium text-right"> 80% </td>
+                              </tr>
+                              <tr>
+                                <td>
+									<a href="pages/okr/uwao.html">
+										<span class="mdc-button-main"> 
+											ЮВАО (Юго-восточный административный округ)
+										</span> 
+									</a>
+								</td>
+                                <td class="text-right">2,050.93</td>
+                                <td class=" font-weight-medium text-right"> 10% </td>
+                              </tr>
+							  <tr>
+                                <td>
+									<a href="pages/okr/uao.html">
+										<span class="mdc-button-main"> 
+											ЮАО (Южный административный округ)
+										</span>
+									</a> 
+								</td>
+                                <td class="text-right">50.93</td>
+                                <td class=" font-weight-medium text-right"> 8% </td>
+                              </tr>
+                              <tr>
+                                <td>
+									<a href="pages/okr/uzao.html"> 
+										<span class="mdc-button-main text-right"> 
+											ЮЗАО (Юго-западный административный округ)
+										</span> 
+									</a>
+								</td>
+                                <td class="text-right">850.93</td>
+                                <td class=" font-weight-medium text-right"> 12% </td>
+                              </tr>
+                              <tr>
+                                <td>
+									<a href="pages/okr/dzao.html"> 
+										<span class="mdc-button-main"> 
+											ЗАО (Западный административный округ)
+										</span> 
+									</a>
+								</td>
+                                <td class="text-right">550.33</td>
+                                <td class=" font-weight-medium text-right"> 14% </td>
+                              </tr>
+                              <tr>
+                                <td>
+									<a href="pages/okr/czao.html"> 
+										<span class="mdc-button-main"> 
+										СЗАО (Северо-Западный административный округ)
+										</span> 
+									</a>
+								</td>
+                                <td class="text-right">34.33</td>
+                                <td class=" font-weight-medium text-right"> 3% </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet"> 
+                      <iframe id="map_348236980" frameborder="0" width="100%" height="400px" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+					  <script type="text/javascript">(function(e,t){var r=document.getElementById(e);r.contentWindow.document.open(),r.contentWindow.document.write(atob(t)),r.contentWindow.document.close()})("map_348236980", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzAyODFmMiIsInRpdGxlIjoiMEtiUWtOQ2UiLCJkZXNjcmlwdGlvbiI6IiIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMzcuNjI0NzE2LDU1Ljc1MDk2NV19LCJpZCI6NjA1fSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJjb2xvciI6IiMwMjgxZjIiLCJ0aXRsZSI6IjBLSFFrTkNlIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzM3LjUyNjA3OCw1NS44Mzc4MTFdfSwiaWQiOjYxNX0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiY29sb3IiOiIjMDI4MWYyIiwidGl0bGUiOiIwS0hRa3RDUTBKND0iLCJkZXNjcmlwdGlvbiI6IiIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMzcuNjI4NDQ3LDU1Ljg1MjQ1NF19LCJpZCI6NjIwfSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJjb2xvciI6IiMwMjgxZjIiLCJ0aXRsZSI6IjBKTFFrTkNlIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzM3Ljc1OTQ0Myw1NS44MDExOF19LCJpZCI6ODE4fSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJjb2xvciI6IiMwMjgxZjIiLCJ0aXRsZSI6IjBLN1FrdENRMEo0PSIsImRlc2NyaXB0aW9uIjoiIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOlszNy43NjI5MTQsNTUuNjk0OTk5XX0sImlkIjo4Mjh9LHsidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzAyODFmMiIsInRpdGxlIjoiMEs3UWtOQ2UiLCJkZXNjcmlwdGlvbiI6IiIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMzcuNjI5MzE0LDU1LjY0NjQ2XX0sImlkIjo4NDZ9LHsidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzAyODFmMiIsInRpdGxlIjoiMEs3UWw5Q1EwSjQ9IiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzM3LjUzODIyNCw1NS42NDY0Nl19LCJpZCI6ODU2fSx7InR5cGUiOiJGZWF0dXJlIiwicHJvcGVydGllcyI6eyJjb2xvciI6IiMwMjgxZjIiLCJ0aXRsZSI6IjBKZlFrTkNlIiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzM3LjQ3MTQyNCw1NS43MDg3MTZdfSwiaWQiOjg2OH0seyJ0eXBlIjoiRmVhdHVyZSIsInByb3BlcnRpZXMiOnsiY29sb3IiOiIjMDI4MWYyIiwidGl0bGUiOiIwS0hRbDlDUTBKND0iLCJkZXNjcmlwdGlvbiI6IiIsInpJbmRleCI6MTAwMDAwMDAwMH0sImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbMzcuNDM0OTg4LDU1LjgyMTY5OF19LCJpZCI6ODc4fV0sIm1hcFBvc2l0aW9uIjp7ImxhdCI6NTUuNzM3NTQ4ODkyNTE2MzYsImxvbiI6MzcuNjAzNzk3OTEyNTk3NjYsInpvb20iOjExfSwiaXNXaGVlbFpvb21FbmFibGVkIjp0cnVlfScpPC9zY3JpcHQ+PHNjcmlwdCBhc3luYz0iIiB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1VQS0xNTg4NjYxNjgtMSI+PC9zY3JpcHQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPihmdW5jdGlvbihlKXtmdW5jdGlvbiB0KCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKX13aW5kb3cuZGF0YUxheWVyPXdpbmRvdy5kYXRhTGF5ZXJ8fFtdLHQoImpzIixuZXcgRGF0ZSksdCgiY29uZmlnIixlKSx3aW5kb3cuZ3RhZz10fSkoJ1VBLTE1ODg2NjE2OC0xJyk8L3NjcmlwdD48L2JvZHk+")</script>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </main>
+        <!-- partial:partials/_footer.html -->
+        <footer>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+                <span class="text-center text-sm-left d-block d-sm-inline-block tx-14">Copyright © TRUST</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+    </div>
+  </div>
+  <!-- plugins:js -->
+  <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../assets/vendors/chartjs/Chart.min.js"></script>
+  <script src="../assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+  <script src="../assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../assets/js/material.js"></script>
+  <script src="../assets/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/api/main.js"></script>
+  <!-- End custom js for this page-->
+  <script src="../../node_modules/axios/dist/axios.min.js"></script>
+</body>
+</html> 
