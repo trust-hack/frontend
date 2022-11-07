@@ -32,10 +32,8 @@ const checkData = async (login)=>{
     .then(res => res.json())
     .then(res=> rightPass = res);
 
-    rightPassHash = rightPass.user.password
-    console.log(rightPassHash);
+    rightPassHash = rightPass.user.password    
     await sha256($('#form-password')[0].value).then(res =>currentPass = res)
-    console.log(currentPass);
 
     if(rightPass && rightPassHash === currentPass){
         changeUrl('/lk/main/lk.html')
