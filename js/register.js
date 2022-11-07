@@ -71,7 +71,6 @@ const checkPass = ()=>{
 const postData = async ({name, login, password})=>{
     let passwordHash;
     await  sha256(password).then(res => passwordHash = res)
-    console.log(passwordHash);
     let data = {
         "fname":"",
         "lname":name,

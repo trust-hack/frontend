@@ -31,6 +31,7 @@ const checkData = async (login)=>{
     await fetch(`http://87.242.121.216:8080/user/login/${login}`)
     .then(res => res.json())
     .then(res=> rightPass = res);
+    console.log(rightPass);
 
     rightPassHash = rightPass.user.password    
     await sha256($('#form-password')[0].value).then(res =>currentPass = res)
