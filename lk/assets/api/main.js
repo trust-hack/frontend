@@ -6,12 +6,12 @@ const getData = async()=>{
      await fetch('http://87.242.121.216:8080/database/region/get')
     .then(res => res.json())
     .then(respData => data = respData.payload)
-    console.log(data);
+
 
     await fetch('http://87.242.121.216:8080/database/defect/get')
     .then(res => res.json())
     .then(resData =>  total = resData.payload)
-    console.log(total)
+
 
     const body = document.querySelector('tbody')
 

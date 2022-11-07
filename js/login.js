@@ -1,5 +1,5 @@
 let rightPass;
-
+console.log('bob');
 const changeUrl = (path/* путь до админ панели в начале без '/' или точки */)=>{
     const url = window.location.href;
     let newUrl = url.split('/');
@@ -9,10 +9,12 @@ const changeUrl = (path/* путь до админ панели в начале 
 
 const checkData = async (login)=>{
 
-    await axios.get(`http://87.242.121.216:8080/user/login/${login}`)
-    .then(res => rightPass = res);
+    await fetch(`http://87.242.121.216:8080/user/login/${login}`)
+    .then(res => res.json())
+    .then(res=> rightPass = res);
+    console.log(rightPass);
 
-    if(rightPass && rightPass.data.user.password === sha256($('#form-password')[0].value)){
+    if(rightPass && rightPass.user.password === sha256($('#form-password')[0].value)){
         changeUrl('/lk/main/lk.html')
     }else{
         for(let i = 0 ; i < $('.form-error').length; i++){

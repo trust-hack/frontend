@@ -52,14 +52,22 @@ const checkPass = ()=>{
 
 
 const postData = async ({name, login, password})=>{
-    await axios.post('http://87.242.121.216:8080/user/signup',{
+    let data = {
         "fname":"",
         "lname":name,
         "login":login,
         "password": password,
         "role": "role",
         "data":"bob"
-    }).then(res => console.log(res))
+    }
+    await fetch('http://87.242.121.216:8080/user/signup',{
+        method:'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+          },
+        body:JSON.stringify(data)
+    }).then(res => res.json())
+    .then(res => console.log(res))
     changeUrl('/lk/main/lk.html')
 }
 
@@ -76,7 +84,12 @@ $(".site-btn").on('click' , (e)=>{
     e.preventDefault();
     let areEqual = checkPass();
     let data = getData();
-    if(data.name && data.login && areEqual && data.password){;
+    postData(data)
+    console.log(data.name.length);
+    if(data.name.length>0 && data.login.length>0  && areEqual && data.password.length>0 ){;
+        console.log('bob');
         postData(data)
+    }else{
+        console.log('none');
     }
 })
