@@ -4,6 +4,22 @@ const inputs = document.querySelectorAll('.check-form');
 const equalBox = document.querySelectorAll('.pass-equal')
 const url = '';/* ccылка на бэкенд */
 
+async function sha256(message) {
+    // encode as UTF-8
+    const msgBuffer = new TextEncoder().encode(message);                    
+
+    // hash the message
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+
+    // convert ArrayBuffer to Array
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+
+    // convert bytes to hex string                  
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    return hashHex;
+}
+
+
 
 
 const getData = ()=>{
@@ -17,7 +33,8 @@ const getData = ()=>{
             login = item.value
         }
         if(item.id === 'password'){
-            password = sha256(item.value)
+            password = item.value
+           
         }
     })
 
@@ -52,11 +69,14 @@ const checkPass = ()=>{
 
 
 const postData = async ({name, login, password})=>{
+    let passwordHash;
+    await  sha256(password).then(res => passwordHash = res)
+    console.log(passwordHash);
     let data = {
         "fname":"",
         "lname":name,
         "login":login,
-        "password": password,
+        "password": passwordHash,
         "role": "role",
         "data":"bob"
     }
@@ -84,9 +104,8 @@ $(".site-btn").on('click' , (e)=>{
     e.preventDefault();
     let areEqual = checkPass();
     let data = getData();
-    postData(data)
-    console.log(data.name.length);
-    if(data.name.length>0 && data.login.length>0  && areEqual && data.password.length>0 ){;
+    console.log(data);
+    if(data.name && data.name.length>0 && data.login.length>0  && areEqual && data.password.length>0 ){;
         console.log('bob');
         postData(data)
     }else{
